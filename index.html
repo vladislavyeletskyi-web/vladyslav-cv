@@ -62,7 +62,7 @@ section{padding:56px 0;border-bottom:1px solid var(--line)}
 .lang-name{font-size:13px;font-weight:500}
 .lang-lvl{font-size:11px;color:var(--blue);background:rgba(58,123,213,.1);padding:2px 7px;border-radius:10px}
 .lang-bar{height:3px;background:var(--line);border-radius:2px;overflow:hidden}
-.lang-fill{height:100%;background:var(--blue);border-radius:2px;width:0}
+.lang-fill{height:100%;background:var(--blue);border-radius:2px}
 .edu-grid{display:grid;gap:12px}
 .edu-card{background:var(--bg2);border:1px solid var(--line);border-radius:8px;padding:16px 20px;display:grid;grid-template-columns:1fr auto;gap:12px;align-items:start}
 .edu-school{font-size:14px;font-weight:500;margin-bottom:3px}
@@ -98,10 +98,10 @@ footer{padding:24px 0;text-align:center;color:var(--muted);font-size:12px}
 <section id="competenze"><div class="reveal"><div class="sec-label">Skills</div><div class="sec-title">Competenze</div></div>
 <div class="skills-grid reveal"><div class="skill-chip h">Microsoft Excel</div><div class="skill-chip h">Google Workspace</div><div class="skill-chip h">Microsoft Word</div><div class="skill-chip h">Strumenti AI</div><div class="skill-chip">Contabilità di base</div><div class="skill-chip">Gestione documenti</div><div class="skill-chip h">Patente muletto</div><div class="skill-chip">Patente B (in corso)</div><div class="skill-chip">Python (base)</div><div class="skill-chip">SQL (base)</div><div class="skill-chip">Precisione</div><div class="skill-chip">Lavoro in team</div></div>
 <div class="reveal"><div class="lang-label">Lingue</div><div class="lang-grid">
-<div><div class="lang-top"><span class="lang-name">Ucraino</span><span class="lang-lvl">C2 — Madrelingua</span></div><div class="lang-bar"><div class="lang-fill" data-w="100%"></div></div></div>
-<div><div class="lang-top"><span class="lang-name">Russo</span><span class="lang-lvl">C2 — Madrelingua</span></div><div class="lang-bar"><div class="lang-fill" data-w="100%"></div></div></div>
-<div><div class="lang-top"><span class="lang-name">Italiano</span><span class="lang-lvl">B2 — Intermedio sup.</span></div><div class="lang-bar"><div class="lang-fill" data-w="65%"></div></div></div>
-<div><div class="lang-top"><span class="lang-name">Inglese</span><span class="lang-lvl">A2 — Base</span></div><div class="lang-bar"><div class="lang-fill" data-w="20%"></div></div></div>
+<div><div class="lang-top"><span class="lang-name">Ucraino</span><span class="lang-lvl">C2 — Madrelingua</span></div><div class="lang-bar"><div class="lang-fill" style="width:100%"></div></div></div>
+<div><div class="lang-top"><span class="lang-name">Russo</span><span class="lang-lvl">C2 — Madrelingua</span></div><div class="lang-bar"><div class="lang-fill" style="width:100%"></div></div></div>
+<div><div class="lang-top"><span class="lang-name">Italiano</span><span class="lang-lvl">B2 — Intermedio sup.</span></div><div class="lang-bar"><div class="lang-fill" style="width:65%"></div></div></div>
+<div><div class="lang-top"><span class="lang-name">Inglese</span><span class="lang-lvl">A2 — Base</span></div><div class="lang-bar"><div class="lang-fill" style="width:20%"></div></div></div>
 </div></div></section>
 
 <section id="formazione"><div class="reveal"><div class="sec-label">Background</div><div class="sec-title">Istruzione</div></div>
@@ -120,12 +120,6 @@ footer{padding:24px 0;text-align:center;color:var(--muted);font-size:12px}
 </div></section>
 </div>
 <footer><p>© 2026 Vladyslav Yeletskyi</p></footer>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js">
-window.addEventListener('load', function(){
-  document.querySelectorAll('.lang-fill').forEach(function(f){
-    f.style.width = f.getAttribute('data-w');
-  });
-});
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js">});
 </script><script>
 const obs=new IntersectionObserver(e=>{e.forEach((el,i)=>{if(el.isIntersecting)setTimeout(()=>el.target.classList.add("visible"),i*70)})},{thr
-                                                                                                                                           
